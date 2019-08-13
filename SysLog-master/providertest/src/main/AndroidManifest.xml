@@ -26,6 +26,13 @@
             android:name=".MyProvider"
             android:authorities="scut.carson_ho.contentprovider"
             android:exported="true"/>
+
+        <provider
+            android:name="com.keyuanc.JProvider"
+            android:authorities="com.keyuanc.provider"
+            android:exported="true"/>
+
+
     </application>
 
 </manifest>

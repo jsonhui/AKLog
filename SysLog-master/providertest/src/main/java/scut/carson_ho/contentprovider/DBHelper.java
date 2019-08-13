@@ -13,13 +13,13 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "finch.db";
 
     // 表名
-    public static final String USER_TABLE_NAME = "user";
-    public static final String JOB_TABLE_NAME = "job";
+    static final String USER_TABLE_NAME = "user";
+    static final String JOB_TABLE_NAME = "job";
 
     private static final int DATABASE_VERSION = 1;
     //数据库版本号
 
-    public DBHelper(Context context) {
+    DBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
@@ -33,7 +33,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)   {
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
 }

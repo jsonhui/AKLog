@@ -46,11 +46,14 @@ public class MyProvider extends ContentProvider {
     public boolean onCreate() {
 
         mContext = getContext();
+
         // 在ContentProvider创建时对数据库进行初始化
         // 运行在主线程，故不能做耗时操作,此处仅作展示
         mDbHelper = new DBHelper(getContext());
         db = mDbHelper.getWritableDatabase();
-        UriMatcher mnMatcher = mMatcher;
+
+
+
         // 初始化两个表的数据(先清空两个表,再各加入一个记录)
         db.execSQL("delete from user");
         db.execSQL("insert into user values(1,'Carson');");
