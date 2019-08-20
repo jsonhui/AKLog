@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.keyuanc.clock.ScreenSaverClock
+        android:id="@+id/clock"
+        android:layout_width="335dp"
+        android:layout_height="335dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/clock_dial_typical"
+        android:gravity="center" />
+
+</RelativeLayout>
