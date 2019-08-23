@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yuwei.face"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="22" />
+    
+    <protected-broadcast android:name="action.face.recognize.drivercode"/>
+    <protected-broadcast android:name="action.face.recognize.facenum"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.yuwei.face.register.RegisterFaceApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_face_label"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.yuwei.face.recoginze.RecognizeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CustomActivityTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.yuwei.face.register.RfidDetectActivity"
+            android:theme="@style/CustomActivityTheme" ></activity>
+        <activity android:name="com.yuwei.face.register.RegisterActivity"
+            android:theme="@style/CustomActivityTheme" ></activity>
+        <activity android:name="com.yuwei.face.util.PermissionUtils$PermissionActivity"
+            android:theme="@style/CustomActivityTheme" ></activity>
+        
+        <service android:name="com.yuwei.face.service.FaceService"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

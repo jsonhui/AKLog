@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yuwei_register_prompt_bg">
+    <ImageView
+        android:id="@+id/motion_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/yuwei_face_register_open_mouth"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/motion_notify_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@id/motion_notify"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dip"
+        android:layout_marginTop="40dip"/>
+</RelativeLayout>

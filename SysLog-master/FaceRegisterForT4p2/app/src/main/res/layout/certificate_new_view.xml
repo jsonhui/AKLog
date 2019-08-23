@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/driver_bg"
+        android:paddingBottom="40dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="40dp">
+
+        <LinearLayout
+            android:id="@+id/driver_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/driver_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_driver_bg" />
+
+            <TextView
+                android:id="@+id/driver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:maxWidth="180dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/label_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/driver_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/CertificateTextNameNewStyle"
+                android:text="@string/str_driver_certificate" />
+
+            <TextView
+                style="@style/CertificateTextNameNewStyle"
+                android:layout_marginTop="12dip"
+                android:text="@string/str_driver_plate" />
+
+            <TextView
+                style="@style/CertificateTextNameNewStyle"
+                android:layout_marginTop="12dip"
+                android:text="@string/str_driver_validity" />
+
+            <TextView
+                style="@style/CertificateTextNameNewStyle"
+                android:layout_marginTop="12dip"
+                android:text="@string/str_driver_level" />
+
+            <TextView
+                style="@style/CertificateTextNameNewStyle"
+                android:layout_marginTop="12dip"
+                android:text="@string/str_phone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/label_layout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cer_number"
+                style="@style/CertificateTextNewStyle"/>
+
+            <TextView
+                android:id="@+id/cer_plate_number"
+                style="@style/CertificateTextNewStyle"
+                android:layout_marginTop="9dip" />
+
+            <TextView
+                android:id="@+id/cer_validity_date"
+                style="@style/CertificateTextNewStyle"
+                android:layout_marginTop="9dip" />
+
+            <ImageView
+                android:id="@+id/cer_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dip" />
+
+            <TextView
+                android:id="@+id/cer_telephony"
+                style="@style/CertificateTextNewStyle"
+                android:layout_marginTop="14dip"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/register_face_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/button_bg"
+        android:layout_marginTop="10dip"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:paddingLeft="160dip"
+        android:paddingRight="160dip"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+</LinearLayout>

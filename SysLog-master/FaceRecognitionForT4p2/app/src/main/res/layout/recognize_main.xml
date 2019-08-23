@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/public_bg" >
+
+    <SurfaceView
+        android:id="@+id/display_surface"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <ImageView
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/face_label" />
+
+    <ImageView
+        android:id="@+id/face_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/face"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/scann_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/scann_line" />
+
+    <com.yuwei.face.widget.LoadingView
+        android:id="@+id/wait_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_left"
+            android:gravity="center"
+            android:paddingLeft="60dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/spaceline" />
+
+        <Button
+            android:id="@+id/import_register_data_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_import_selector"
+            android:gravity="center"
+            android:text="@string/import_date"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/spaceline" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_right"
+            android:gravity="center"
+            android:paddingRight="60dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/return_home_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/video_back_selector"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/return_btn"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" 
+        android:onClick="return_home" />
+
+</RelativeLayout>

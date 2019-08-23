@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FaceRecognize</string>
+    <string name="active_success">Active Success</string>
+    <string name="active_failed">Active failed, please check the network</string>
+    <string name="init_failed">Init failed，please restart App</string>
+    <string name="net_active_failed">Initial activation requires network connection</string>
+    <string name="wait">Wait</string>
+    <string name="return_btn">Back</string>
+    <string name="no_tf_card">TF Card Not Recognized</string>
+    <string name="delete_date">Delete data</string>
+    <string name="import_date">Import data</string>
+    <string name="import_failed">Import failed</string>
+    <string name="no_register_date">No data</string>
+    <string name="import_success">Import success</string>
+    <string name="recognition_failed">Recognize failed，Please confirm that you are registered</string>
+    <string name="recognition_success">Recognize success</string>
+    <string name="va_connect_failed_tips">Camera connection timeout，please restart App</string>
+    <string name="str_driver_stand_in">Drivers operate on shift</string>
+    <string name="str_driver_not_insystem">Drivers are not people in the system</string>
+    <string name="camera_str">camera</string>
+    <string name="occlusion_str">occlusion</string>
+</resources>

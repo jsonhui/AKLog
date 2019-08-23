@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="str_title">人脸识别登录</string>
+    <string name="str_driver_certificate">资格证号 :</string>
+    <string name="str_driver_plate">车牌号 :</string>
+    <string name="str_driver_validity">有效期至 :</string>
+    <string name="str_driver_level">等级 :</string>
+    <string name="str_phone">监督电话 :</string>
+    <string name="app_name">人脸识别</string>
+    <string name="active_success">激活引擎成功</string>
+    <string name="already_activated">引擎已激活，无需再次激活</string>
+    <string name="registering_please_wait">注册中，请稍等</string>
+    <string name="active_failed">引擎未激活, 请检查网络是否通畅</string>
+    <string name="init_failed">引擎初始化失败，请退出重启App</string>
+    <string name="net_active_failed">初次激活需要连接网络</string>
+    <string name="wait">请稍后</string>
+    <string name="return_btn">返回</string>
+    <string name="ok">确认</string>
+    <string name="no_tf_card">未识别到TF卡</string>
+    <string name="import_date">导入数据</string>
+    <string name="import_failed">数据导入失败</string>
+    <string name="no_register_date">没有注册数据</string>
+    <string name="import_success">数据导入成功</string>
+    <string name="recognition_failed">识别失败，请确认是否注册</string>
+    <string name="recognition_success">识别成功</string>
+    <string name="va_connect_failed_tips">视频连接超时，请重启应用</string>
+    <string name="str_driver_stand_in">司机顶班运营</string>
+    <string name="str_driver_not_insystem">司机不是系统内人员</string>
+    <string name="camera_str">摄像头</string>
+    <string name="occlusion_str">被遮挡</string>
+
+</resources>

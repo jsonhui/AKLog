@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/public_bg" >
+
+    <SurfaceView
+        android:id="@+id/display_surface"
+        android:layout_width="295dp"
+        android:layout_height="295dp"
+        android:layout_centerInParent="true"/>
+  <!--  <com.yuwei.face.register.view.RegisterLeftPromptView
+        android:id = "@+id/register_notify_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dip"/>-->
+    <Button
+        android:id="@+id/step_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="120dip"
+        android:background="@drawable/yuwei_step_click"/>
+
+    <ImageView
+        android:layout_width="388dp"
+        android:layout_height="388dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/face_label"/>
+
+    <ImageView
+        android:id="@+id/face_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/face"/>
+
+    <ImageView
+        android:id="@+id/scann_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/scann_line"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:layout_width="234dp"
+        android:layout_height="106dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:text="@string/str_title"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+</RelativeLayout>

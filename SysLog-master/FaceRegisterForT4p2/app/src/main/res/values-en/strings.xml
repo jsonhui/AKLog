@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FaceRegister</string>
+    <string name="active_success">Active Success</string>
+    <string name="active_failed">Active failed, please check the network</string>
+    <string name="init_failed">Init failed，please restart App</string>
+    <string name="net_active_failed">Initial activation requires network connection</string>
+    <string name="person_submit_tip">FaceRegister</string>
+    <string name="person_tip">Please enter the driver code</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="return_btn">Back</string>
+    <string name="register">Reister</string>
+    <string name="delete_date">Delete data</string>
+    <string name="export_date">Export data</string>
+    <string name="register_failed">Register failed</string>
+    <string name="register_success">Register success</string>
+    <string name="wait">Wait</string>
+    <string name="delete_success">Delete success</string>
+    <string name="no_face_date">No data</string>
+    <string name="no_tf_card">TF Card Not Recognized</string>
+    <string name="export_failed">Export failed</string>
+    <string name="no_register_date">No data</string>
+    <string name="export_success">Export success</string>
+    <string name="va_connect_failed_tips">Camera connection timeout，please restart App</string>
+
+</resources>
